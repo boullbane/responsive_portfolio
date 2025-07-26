@@ -1,0 +1,26 @@
+{
+  "name": "responsive_portfolio",
+  "version": "1.0.0",
+  "description": "My responsive portfolio website. using HTML, SCSS, JavaScript..",
+  "main": "index.js",
+  "homepgae": "https://boullbane.github.io/responsive_portfolio/dist",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "responsive",
+    "HTML",
+    "SCSS",
+    "CSS",
+    "JavaScript"
+  ],
+  "author": "@boullbane",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "node-sass": "^9.0.0"
+  }
+}
