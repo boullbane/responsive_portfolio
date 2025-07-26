@@ -25,3 +25,16 @@
         }
     }
 }
+
+@mixin typing_effect {
+       .cursor {
+            display: inline-block;
+            animation: blink 0.7s infinite;
+            color: $secondary-color;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+}

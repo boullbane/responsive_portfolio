@@ -153,6 +153,16 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+  main#aboutme .cursor {
+    display: inline-block;
+    animation: blink 0.7s infinite;
+    color: #eece1a; }
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
   main#aboutme .about-info {
     display: grid;
     grid-gap: 30px;
@@ -193,78 +203,97 @@ main {
       main#aboutme .about-info .job p {
         text-transform: capitalize; }
 
-.projects {
+main#work .cursor {
+  display: inline-block;
+  animation: blink 0.7s infinite;
+  color: #eece1a; }
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
+
+main#work .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.7rem; }
-  .projects img {
+  main#work .projects img {
     width: 100%;
     border: #eece1a 5px solid;
     border-radius: 10px; }
-    .projects img:hover {
+    main#work .projects img:hover {
       opacity: 0.3;
       border-color: #c4c4c4;
       transition: all 0.6s ease-out; }
+  main#work .projects .btn, main#work .projects .btn-dark, main#work .projects .btn-light {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 10px;
+    margin-bottom: 0.3rem;
+    text-align: center; }
+    main#work .projects .btn:hover, main#work .projects .btn-dark:hover, main#work .projects .btn-light:hover {
+      background: #eece1a;
+      color: #000;
+      transition: all 0.6s ease-out; }
+  main#work .projects .btn-dark {
+    background: black;
+    color: #fff; }
+  main#work .projects .btn-light {
+    background: #c4c4c4;
+    color: #444; }
 
-.btn, .btn-dark, .btn-light {
-  display: block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  border-radius: 10px;
-  margin-bottom: 0.3rem;
-  text-align: center; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
-    color: #000;
-    transition: all 0.6s ease-out; }
+main#contactme .cursor {
+  display: inline-block;
+  animation: blink 0.7s infinite;
+  color: #eece1a; }
 
-.btn-dark {
-  background: black;
-  color: #fff; }
+@keyframes blink {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
 
-.btn-light {
-  background: #c4c4c4;
-  color: #444; }
-
-.boxes {
+main#contactme .boxes {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 25px; }
-  .boxes div {
+  main#contactme .boxes div {
     font-size: 25px;
     border: #eece1a 4px solid;
     padding: 25px 40px;
     margin-bottom: 1rem; }
-    .boxes div:hover {
+    main#contactme .boxes div:hover {
       padding: 15px 20px;
       background: #eece1a;
       color: #000;
       transition: all 0.5s ease-out; }
-      .boxes div:hover span {
+      main#contactme .boxes div:hover span {
         color: #000; }
-  .boxes section#contact {
+  main#contactme .boxes section.contact {
     font-size: 25px;
     padding: 25px 40px;
     width: 600px;
     margin: 0 auto;
     padding: 20px;
     border: #eece1a 4px solid; }
-    .boxes section#contact form {
+    main#contactme .boxes section.contact form {
       display: flex;
       flex-direction: column; }
-      .boxes section#contact form label {
+      main#contactme .boxes section.contact form label {
         margin-top: 10px;
         color: #eece1a; }
-      .boxes section#contact form input, .boxes section#contact form textarea {
+      main#contactme .boxes section.contact form input, main#contactme .boxes section.contact form textarea {
         padding: 10px;
         font-size: 16px;
         margin-top: 5px;
         border: 1px solid #ccc;
         border-radius: 5px; }
-      .boxes section#contact form button {
+      main#contactme .boxes section.contact form button {
         margin-top: 20px;
         padding: 10px;
         background-color: #eece1a;
@@ -273,7 +302,7 @@ main {
         font-size: 16px;
         border-radius: 5px;
         cursor: pointer; }
-      .boxes section#contact form button:hover {
+      main#contactme .boxes section.contact form button:hover {
         background-color: #444;
         color: #fff;
         border: #eece1a 3px solid;
@@ -342,8 +371,8 @@ main {
     padding: 1rem; }
     main#work .lg-heading {
       font-size: 3rem; }
-  .projects {
-    grid-template-columns: 1fr; }
+    main#work .projects {
+      grid-template-columns: 1fr; }
   main#contactme {
     padding: 1rem;
     flex-direction: column;
@@ -355,10 +384,13 @@ main {
       width: 100%;
       padding: 20px;
       text-align: center; }
+      main#contactme div.boxes {
+        align-items: normal; }
     main#contactme section#contact {
       width: 100%;
       padding: 15px;
-      font-size: 18px; }
+      font-size: 18px;
+      background: red; }
       main#contactme section#contact form input,
       main#contactme section#contact form textarea {
         font-size: 14px; }
