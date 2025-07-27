@@ -38,3 +38,24 @@
             50% { opacity: 0; }
         }
 }
+@mixin scroll_bar {
+    scrollbar-width: 50px;
+    scrollbar-color: $primary-color $secondary-color;
+        /* Works in WebKit browsers (Chrome, Safari, Edge) */
+    ::-webkit-scrollbar {width: 12px;}
+
+    ::-webkit-scrollbar-track {
+    background: $secondary-color; /* light background */
+    border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background: $primary-color; /* gray scrollbar */
+    border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+    background: darken($secondary-color, 25); /* darker on hover */
+    }
+
+}

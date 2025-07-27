@@ -14,6 +14,7 @@ $bg-opacity:0.9;
     box-sizing: border-box;
     font-family: 'Poppins';
     line-height: 1.5;
+    @include scroll_bar;
 }
 body {
     @include background;
