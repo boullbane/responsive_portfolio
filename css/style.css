@@ -277,9 +277,6 @@ main#contactme .boxes {
   main#contactme .boxes section.contact {
     font-size: 25px;
     padding: 25px 40px;
-    width: 600px;
-    margin: 0 auto;
-    padding: 20px;
     border: #eece1a 4px solid; }
     main#contactme .boxes section.contact form {
       display: flex;
@@ -292,7 +289,8 @@ main#contactme .boxes {
         font-size: 16px;
         margin-top: 5px;
         border: 1px solid #ccc;
-        border-radius: 5px; }
+        border-radius: 5px;
+        outline: none; }
       main#contactme .boxes section.contact form button {
         margin-top: 20px;
         padding: 10px;
@@ -374,26 +372,20 @@ main#contactme .boxes {
     main#work .projects {
       grid-template-columns: 1fr; }
   main#contactme {
-    padding: 1rem;
+    padding: 0.9rem;
     flex-direction: column;
     align-items: stretch; }
     main#contactme .lg-heading {
-      font-size: 3rem; }
+      font-size: 2.5rem; }
     main#contactme div {
-      font-size: 18px;
+      font-size: 1rem !important;
+      padding: 10px !important;
       width: 100%;
-      padding: 20px;
       text-align: center; }
       main#contactme div.boxes {
         align-items: normal; }
-    main#contactme section#contact {
+    main#contactme section.contact {
       width: 100%;
-      padding: 15px;
-      font-size: 18px;
-      background: red; }
-      main#contactme section#contact form input,
-      main#contactme section#contact form textarea {
-        font-size: 14px; }
-      main#contactme section#contact form button {
-        font-size: 14px;
-        padding: 8px; } }
+      padding: 10px !important; }
+      main#contactme section.contact form label {
+        font-size: 1rem; } }
