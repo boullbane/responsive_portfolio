@@ -96,7 +96,23 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins';
-  line-height: 1.5; }
+  line-height: 1.5;
+  scrollbar-width: 50px;
+  scrollbar-color: #444 #eece1a;
+  /* Works in WebKit browsers (Chrome, Safari, Edge) */ }
+  * ::-webkit-scrollbar {
+    width: 12px; }
+  * ::-webkit-scrollbar-track {
+    background: #eece1a;
+    /* light background */
+    border-radius: 10px; }
+  * ::-webkit-scrollbar-thumb {
+    background: #444;
+    /* gray scrollbar */
+    border-radius: 10px; }
+  * ::-webkit-scrollbar-thumb:hover {
+    background: #7f6d09;
+    /* darker on hover */ }
 
 body {
   background: #444;
