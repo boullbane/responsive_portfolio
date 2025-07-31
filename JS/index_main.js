@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
         typeH1(() => {
             typeH2(() => {
                 // After short pause, restart animation
-                setTimeout(runTypingEffect, 4000);
+                // setTimeout(runTypingEffect, 4000);
             });
         });
     }
