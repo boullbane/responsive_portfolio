@@ -414,6 +414,8 @@ main#contactme .boxes {
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
+  main#home .icons {
+    justify-content: center; }
   main#aboutme {
     padding: 1rem; }
     main#aboutme .lg-heading {
