@@ -4,6 +4,9 @@
 @mixin easeOut-project {
     transition: all 0.6s ease-out;
 }
+@mixin transtionSocialMedia {
+    transition: 300ms cubic-bezier(.42,0,.15,1.26);
+}
 @mixin background {
     @if $show-home-image {
         &#bg-img {
@@ -41,21 +44,11 @@
 @mixin scroll_bar {
     scrollbar-width: 50px;
     scrollbar-color: $primary-color $secondary-color;
-        /* Works in WebKit browsers (Chrome, Safari, Edge) */
     ::-webkit-scrollbar {width: 12px;}
 
-    ::-webkit-scrollbar-track {
-    background: $secondary-color; /* light background */
-    border-radius: 10px;
-    }
+    ::-webkit-scrollbar-track {background: $secondary-color;border-radius: 10px;}
 
-    ::-webkit-scrollbar-thumb {
-    background: $primary-color; /* gray scrollbar */
-    border-radius: 10px;
-    }
+    ::-webkit-scrollbar-thumb {background: $primary-color;border-radius: 10px;}
 
-    ::-webkit-scrollbar-thumb:hover {
-    background: darken($secondary-color, 25); /* darker on hover */
-    }
-
+    ::-webkit-scrollbar-thumb:hover {background: darken($secondary-color, 25);}
 }
